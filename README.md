@@ -96,7 +96,6 @@ GROUP BY C.Title;
 
 - `erd_story.md` – Story-based breakdown of the ERD
 - `schema.sql` – Full table creation and sample insert data
-- `queries.sql` – Example SQL queries for demonstration
 - `README.md` – This file
 
 ---
