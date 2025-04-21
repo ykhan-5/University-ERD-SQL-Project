@@ -71,3 +71,39 @@ SELECT C.Title, COUNT(E.StudentID) AS NumEnrolled
 FROM Class C
 LEFT JOIN Enrolls_In E ON C.ClassID = E.ClassID
 GROUP BY C.Title;
+
+## 🧠 Semantic Constraints
+
+- A **Class** must be associated with a valid **Professor**, **College**, and **Building**.
+- A **Student** may not enroll in the same class more than once at the same time.
+- **Professors** may only teach classes within their own college.
+- Every **College** must have a **Dean**.
+- If a **Class** is canceled or a **Student** drops out, associated **enrollment records** must be removed.
+- A **Building** must be assigned to each class; if a building is demolished, classes must be reassigned or canceled.
+
+---
+
+## 🛠️ Tech Used
+
+- **SQL** (MySQL / PostgreSQL-style syntax)
+- **app.diagrams.net**
+- **Crow’s foot notation** (for cardinalities in visual model)
+
+---
+
+## 📎 Files
+
+- `erd_story.md` – Story-based breakdown of the ERD
+- `schema.sql` – Full table creation and sample insert data
+- `queries.sql` – Example SQL queries for demonstration
+- `README.md` – This file
+
+---
+
+## 📈 Future Improvements
+
+- Add **terms and grades** to `Enrolls_In`
+- Normalize **Major** as its own entity
+- Include **Class Schedules** (days/times)
+- Create **views** for common reports (e.g. student transcripts)
+
