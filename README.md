@@ -1,7 +1,3 @@
-# University-ERD-SQL-Project
-This fictional university database was modeled using ERD storytelling and implemented in SQL. It includes normalized schema design, semantic business constraints, and sample queries reflecting real-world operations.
-
-
 # 🏛️ University ERD & SQL Project
 
 This project models a fictional university database system using an Entity-Relationship Diagram (ERD) and normalized SQL tables. The goal is to represent real-world academic operations — including colleges, classes, professors, students, buildings, and deans — in a structured, queryable database format.
