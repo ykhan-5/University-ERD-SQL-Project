@@ -71,6 +71,7 @@ SELECT C.Title, COUNT(E.StudentID) AS NumEnrolled
 FROM Class C
 LEFT JOIN Enrolls_In E ON C.ClassID = E.ClassID
 GROUP BY C.Title;
+```
 
 ## 🧠 Semantic Constraints
 
